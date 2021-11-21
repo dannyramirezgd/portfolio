@@ -75,6 +75,7 @@ h1 {
     border: 2px solid var(--primary-color);
     justify-content: space-between;
     flex-wrap: wrap;
+    border-radius: 10%;
 }
 .name {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -84,21 +85,17 @@ h1 {
     font-size:25px;
     font-weight: bolder;
 }
-.information{
-    width: 75%;
-    margin: 0 auto;
+section{
+    width: 85%;
+    margin: 10px auto;
     text-align: center;
     justify-content: center;
-    border-radius: 10%;
 }
 .biography{
     background: var(--primary-color);
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
     
 }
-.bio-p{
+.biography p{
     margin: 0px auto;
     padding: 15px 30px;
     background: var(--primary-color);
@@ -109,11 +106,11 @@ h1 {
     text-align: center;
     list-style: none;
 }
-.information h2 {
+h2 {
     padding: 15px 15px;
     border-bottom: 5px solid var(--secondary-color);
 }
-.information h3 {
+h3 {
     padding: 15px 15px;
 }
 .resume ul li {
