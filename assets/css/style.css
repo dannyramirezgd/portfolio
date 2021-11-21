@@ -16,9 +16,12 @@ body{
     width: 100%;
 }
 .logo{
-    height: 80px;
-    width: 100px;
+    height: 50px;
+    width: 70px;
     border-radius: 25%;
+    margin:0;
+    text-decoration: none;
+    border: 1px solid var(--secondary-color)
 }
 header {
     padding: 20px 35px;
@@ -26,10 +29,35 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-size: cover;
+}
+header nav{
+    margin: 7px 0;
+}
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style:none;
+}
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.5vw;
+    text-decoration: none;
+    color:var(--secondary-color);
+    font-weight: bolder;
+    background-color: var(--tertiary-color);
+    border-radius: 10%;
+    margin: 0 5px;
+    border: 1px solid var(--secondary-color);
+    
+}
+header nav ul li a:hover{
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
 }
 .pic {
     height:250px;
@@ -40,7 +68,7 @@ h1 {
     margin: 30px auto;
     font-weight: bold;
     font-size: 36px;
-    width:30%;
+    width:50%;
     text-align: center;
     background: var(--secondary-color);
     color: var(--tertiary-color);
@@ -61,13 +89,14 @@ h1 {
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-
+    border-radius: 10%;
 }
 .biography{
     background: var(--primary-color);
     text-align: center;
     width: 100%;
     margin: 0 auto;
+    
 }
 .bio-p{
     margin: 0px auto;
