@@ -1,0 +1,99 @@
+:root{
+    --primary-color: rgb(25, 207, 200);
+    --secondary-color: rgb(0, 0, 0);
+    --tertiary-color: rgb(255, 255, 255);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;;
+
+}
+body{
+    color: var(--secondary-color);
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.logo{
+    height: 80px;
+    width: 100px;
+    border-radius: 25%;
+}
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+}
+.pic {
+    height:250px;
+    width:230px;
+    border-radius: 50%;
+}
+h1 {
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 36px;
+    width:30%;
+    text-align: center;
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border: 2px solid var(--primary-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+.title{
+    font-size:25px;
+    font-weight: bolder;
+}
+.information{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+
+}
+.biography{
+    background: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.bio-p{
+    margin: 0px auto;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    font-size: 14px;
+    width: 100%;
+}
+.interests ul li{
+    text-align: center;
+    list-style: none;
+}
+.information h2 {
+    padding: 15px 15px;
+    border-bottom: 5px solid var(--secondary-color);
+}
+.information h3 {
+    padding: 15px 15px;
+}
+.resume ul li {
+    text-align: left;
+    list-style: none;
+}
+.recent-work{
+    background: var(--primary-color);
+}
+.duties ul li{
+    list-style: disc;
+}
