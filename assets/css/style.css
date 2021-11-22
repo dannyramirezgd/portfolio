@@ -10,10 +10,11 @@
 
 }
 body{
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
     width: 100%;
+    background-image: url(../images/5b4f15b1ea4aa_thumb900.jpg);
 }
 .logo{
     height: 50px;
@@ -102,6 +103,10 @@ section{
     font-size: 14px;
     width: 100%;
 }
+.interests{
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+}
 .interests ul li{
     text-align: center;
     list-style: none;
@@ -113,13 +118,39 @@ h2 {
 h3 {
     padding: 15px 15px;
 }
+
+.recent-work{
+    background: var(--primary-color);
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgs {
+    height: 50px;
+    width: 65px;
+    margin-top: 5px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 30%;
+}
+.resume {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+}
 .resume ul li {
     text-align: left;
     list-style: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-weight: bold;
 }
-.recent-work{
-    background: var(--primary-color);
+.resume p{
+    text-align: right;
+    margin-right: 5px;
 }
 .duties ul li{
     list-style: disc;
+    font-weight: lighter;
 }
