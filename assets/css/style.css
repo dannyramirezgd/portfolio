@@ -154,3 +154,54 @@ h3 {
     list-style: disc;
     font-weight: lighter;
 }
+@media screen and (min-width: 980px) {
+    header {
+        padding: 20px 35px;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        top: 0;
+        background-size: cover;
+    }
+    header nav{
+        margin: 7px 0;
+    }
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style:none;
+    }
+    header nav ul li a{
+        padding: 10px 20px;
+        font-weight: lighter;
+        font-size: 1.5vw;
+        text-decoration: none;
+        color:var(--secondary-color);
+        font-weight: bolder;
+        background-color: var(--tertiary-color);
+        border-radius: 10%;
+        margin: 0 15px;
+        border: 1px solid var(--secondary-color);
+        
+    }
+    header nav ul li a:hover{
+        color: var(--tertiary-color);
+        background-color: var(--secondary-color);
+    }
+    h1 {
+            margin: 30px auto;
+            font-weight: bold;
+            font-size: 36px;
+            width:25%;
+            text-align: center;
+            background: var(--secondary-color);
+            color: var(--tertiary-color);
+            border: 2px solid var(--primary-color);
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-radius: 10%;
+    }
+}
