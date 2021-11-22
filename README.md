@@ -6,8 +6,8 @@ A portfolio of my information, my recent work, my resume, and how to contact me
 
 ## Built With
 
--HTML
--CSS
+- HTML
+- CSS
 
 ## Website
 
