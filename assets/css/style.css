@@ -44,7 +44,7 @@ header nav ul{
     list-style:none;
 }
 header nav ul li a{
-    padding: 10px 15px;
+    padding: 10px 5px;
     font-weight: lighter;
     font-size: 2.5vw;
     text-decoration: none;
@@ -52,7 +52,7 @@ header nav ul li a{
     font-weight: bolder;
     background-color: var(--tertiary-color);
     border-radius: 10%;
-    margin: 0 5px;
+    margin: 0 1px;
     border: 1px solid var(--secondary-color);
     
 }
@@ -110,6 +110,7 @@ section{
 .interests ul li{
     text-align: center;
     list-style: none;
+    padding-bottom: 10px;
 }
 h2 {
     padding: 15px 15px;
@@ -123,16 +124,18 @@ h3 {
     background: var(--primary-color);
     display:flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    justify-content:center;
+}
+.projects{
     align-items: center;
-    justify-content: space-evenly;
+    padding: 20px;
 }
 .imgs {
     height: 50px;
     width: 65px;
-    margin-top: 5px;
     border: 2px solid var(--secondary-color);
-    border-radius: 30%;
+    border-radius: 15%;
+    align-items: center;
 }
 .resume {
     background: var(--tertiary-color);
@@ -153,6 +156,12 @@ h3 {
 .duties ul li{
     list-style: disc;
     font-weight: lighter;
+}
+.contact-form{
+    background: var(--primary-color);
+    text-decoration: none;
+    color: var(--tertiary-color);
+    padding: 10px;
 }
 @media screen and (min-width: 980px) {
     header {
@@ -177,7 +186,7 @@ h3 {
     header nav ul li a{
         padding: 10px 20px;
         font-weight: lighter;
-        font-size: 1.5vw;
+        font-size: 20px;
         text-decoration: none;
         color:var(--secondary-color);
         font-weight: bolder;
@@ -203,5 +212,8 @@ h3 {
             justify-content: space-between;
             flex-wrap: wrap;
             border-radius: 10%;
+    }
+    section{
+        width:40%;
     }
 }
