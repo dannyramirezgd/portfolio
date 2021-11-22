@@ -124,18 +124,24 @@ h3 {
     background: var(--primary-color);
     display:flex;
     flex-wrap: wrap;
-    justify-content:center;
-}
-.projects{
-    align-items: center;
-    padding: 20px;
+    justify-content: center;
 }
 .imgs {
     height: 50px;
     width: 65px;
     border: 2px solid var(--secondary-color);
     border-radius: 15%;
-    align-items: center;
+}
+.imgs:hover{
+    opacity: 0.5;
+}
+.first-application{
+    width:100%;
+    font-size: 25px;
+}
+.first-application-img{
+    height: 95px;
+    width: 110px;
 }
 .resume {
     background: var(--tertiary-color);
@@ -159,9 +165,16 @@ h3 {
 }
 .contact-form{
     background: var(--primary-color);
-    text-decoration: none;
     color: var(--tertiary-color);
     padding: 10px;
+}
+.contact-form a{
+    text-decoration: none;
+    color:var(--tertiary-color);
+    padding: 0 20px;
+}
+.contact-form a:hover{
+    color:var(--secondary-color);
 }
 @media screen and (min-width: 980px) {
     header {
