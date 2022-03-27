@@ -3,228 +3,307 @@
   <head>
     <meta charset="UTF-8" />
     <title>Danny Ramirez Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
-    <header>
-      <!--navigation bar with 4 links-->
-      <a href=""
-        ><img class="logo" src="./assets/images/personal logo.png"
-      /></a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#interests">Interests</a>
-          </li>
 
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-        </ul>
+  <body>
+    <header id="navbar">
+      <!--navigation bar with 4 links-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./assets/images/personalLogo.png"
+                  alt=""
+                  width="70"
+                  height="58"
+                  class="d-inline-block align-text-top"
+                />
+              </a>
+            </div>
+          </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about-me"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="./assets/images/Resume.pdf"
+                  download
+                  >Resume</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact-me">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!--name and title-->
-    <h1>
-      <img class="pic" src="./assets/images/Capture.jpg" />
-      <div class="name">Danny Ramirez</div>
-      <div class="title">Full Stack Web Developer</div>
-    </h1>
-    <!--Biography-->
-    <section id="about-me" class="biography">
-      <h2>About Me</h2>
-      <p>
-        I am currently pursuing certification as a full
-        stack web developer using skills in counseling and interpersonal
-        development to create a more holistic approach to web design and client
-        relations. I am known for successfully applying critical thinking and problem
-        solving strengths to tackle any obstacle and find resolution efficiently
-        and effectively. Using my leadership skills, I am able to bring a team of
-        fellow students together to create a web application that employs a
-        unique CSS framework, multiple server-side APIs, and interactive user
-        engagement. I am comfortable working as a team and excited to apply my
-        technical skills in a fast-paced, quality-driven team to build
-        innovative and engaging experiences on the web.
-      </p>
-    </section>
-    <!--List of interests for progams-->
-    <!-- <section id="interests" class="interests">
-      <h2>Interests</h2>
-      <h3>Front-End Development</h3>
-      <ul class="interests">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
-      <h3>Back-End Development</h3>
-      <ul class="interests">
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>Ruby</li>
-      </ul>
-    </section> -->
-    <!--Recent work-->
-    <section id="projects">
-      <h2 class="recent-work">Projects</h2>
-        <!--Interactive Front-End Project 1-->
-        <div>
-          <h3>Front End Project</h3>
-          <a href=""
-            ><img
-              class="imgs"
-              src="./assets/images/screencapture.png"
-              alt="front-end project on computer screen"
-          /></a>
-        </div>
-        <!--Interactive Full-Stack Project 2-->
-        <div>
-          <h3>Full-Stack Project</h3>
-          <a href=""
-            ><img
-              class="imgs"
-              src="assets/images/full-stacck.PNG"
-              alt="full-stack displayed as a cheeseburger"
-          /></a>
-        </div>
-        <!--Interactive MERN SPA Project 3-->
-        <div>
-          <h3>MERN SPA Project</h3>
-          <a href=""
-            ><img
-              class="imgs"
-              src="assets/images/mern-spa.PNG"
-              alt="MERN and different random images associated with MERN"
-          /></a>
-        </div>
-      </div>
-      <!--Interactive Front-End Project 1-->
+    <main id="name">
+      <h1>
+        <div class="name">Danny Ramirez</div>
+        <div class="title">Full Stack Web Developer</div>
+      </h1>
+    </main>
+    <!--About me-->
+    <section id="about-me">
       <div>
-        <h3>Front End Project</h3>
-        <a href="https://dannyramirezgd.github.io/karaoke-web-app/"><img class="imgs" src="assets/images/front-end.PNG" alt="front-end project on computer screen"/></a>
+        <img class="rounded-circle" src="./assets/images/profilePic.jpg" />
       </div>
-      <!--Interactive Full-Stack Project 2-->
-      <div>  
-        <h3>Full-Stack Project</h3>
-        <a href="https://secure-savannah-19572.herokuapp.com/"><img class="imgs" src="assets/images/screencapture-secure-savannah-19572-herokuapp-2022-03-10-08_39_54.png" alt="login page for dog walking application"/></a>
+      <div class="bio">
+        <h2>About Me</h2>
+        <p class="fs-5">
+          I am currently pursuing certification as a full stack web developer
+          using skills in counseling and interpersonal development to create a
+          more holistic approach to web design and client relations. I am known
+          for successfully applying critical thinking and problem solving
+          strengths to tackle any obstacle and find resolution efficiently and
+          effectively. Using my leadership skills, I am able to bring a team of
+          fellow students together to create a web application that employs a
+          unique CSS framework, multiple server-side APIs, and interactive user
+          engagement. I am comfortable working as a team and excited to apply my
+          technical skills in a fast-paced, quality-driven team to build
+          innovative and engaging experiences on the web.
+        </p>
       </div>
-      <!--Interactive MERN SPA Project 3-->
-      <div> 
-        <h3>MERN SPA Project</h3>
-        <a href=""><img class="imgs" src="assets/images/mern-spa.PNG" alt="MERN and different random images associated with MERN"/></a>
-      </div> 
-    </div>
     </section>
-    <!--Resume-->
-    <section id="resume" class="resume">
-      <h2>Resume</h2>
-      <h3>Education</h3>
-      <h4>Radford University - Radford, VA</h4>
-      <ul>
-        <li>Master of Science (M.S.), Counseling and Human Development</li>
-        <p class="right-align">Graduated in May 2016</p>
-        <li>Bachelor of Science (B.S.), Psychology with Minor in Management</li>
-        <p class="right-align">Graduated in May 2013</p>
-      </ul>
-      <h3>Work Experience</h3>
-      <ul>
-        <li>Fairfax County Schools - Fairfax, VA</li>
-        <p class="right-align">August 2020-Present</p>
-        <div class="duties">
-          <ul>
-            <li>
-              Counsel students on concerns about academic, emotional, or social
-              problems.
-            </li>
-            <li>
-              Encourage students to process their obstacles and create goals
-              with actionable plans
-            </li>
-            <li>Mediate conflict between students and their peers</li>
-            <li>
-              Create conncetions and relationships with teachers, staff, and
-              student families within the community - Utilized Spanish speaking
-              skills in fostering these relationships
-            </li>
-            <li>
-              Refer students to community mental health resources based upon
-              need and means.
-            </li>
-            <li>
-              Collaborated with students, parents, and staff members to develop
-              post-secondary plans for students
-            </li>
-            <li>
-              Collaborated with other staff members to implement several student
-              intervention programs for new students, first generation college
-              students, and orientation sessions for rising 9th and rising 12th
-              graders.
-            </li>
-            <li>
-              Sponsored several student led programs such as Robinson's E-Sports
-              team and iLASA, Robinson's Latin American Student's Association
-            </li>
-          </ul>
+    <!--Projects-->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card position-static" style="width: 18rem">
+          <img
+            src="./assets/images/frontEnd.PNG"
+            class="card-img-top"
+            alt="front-end project on computer screen"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Karaoke Made Easy</h5>
+            <p class="card-text">
+              An Application that allows users to quickly search songs and find
+              lyrics for those songs
+            </p>
+          </div>
+          <div class="card-body">
+            <a
+              href="https://dannyramirezgd.github.io/karaoke-web-app/"
+              class="card-link"
+              >Live Site</a
+            >
+            <a
+              href="https://github.com/dannyramirezgd/karaoke-web-app"
+              class="card-link"
+              >GitHub Page</a
+            >
+          </div>
         </div>
-        <li>Prince William County Schools - Woodbridge, VA</li>
-        <p>July 2016 to August 2020</p>
-        <div class="duties">
-          <ul>
-            <li>
-              Counsel students on concerns about academic, emotional, or social
-              problems.
-            </li>
-            <li>
-              Encourage students to process their obstacles and create goals
-              with actionable plans
-            </li>
-            <li>Mediate conflict between students and their peers</li>
-            <li>
-              Create conncetions and relationships with teachers, staff, and
-              student families within the community - Utilized Spanish speaking
-              skills in fostering these relationships
-            </li>
-            <li>
-              Refer students to community mental health resources based upon
-              need and means.
-            </li>
-            <li>
-              Develop academic committees to improve learning conditions and
-              collaborate with staff within the building such as leadership,
-              principal advisory councils, and other academic committees such as
-              literacy and STEM.
-            </li>
-            <li>
-              Additional duities include organizing, developing and inception of
-              school wide behavior intervention program
-            </li>
-            <li>
-              Demonstrated initiative by developing and coaching a robotics team
-              to encourage STEM engagements for students
-            </li>
-          </ul>
+        <div class="card position-static" style="width: 18rem">
+          <img
+            src="./assets/images/fullStack.png"
+            class="card-img-top"
+            alt="screen cap of dog walking website"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Wag!</h5>
+            <p class="card-text">
+              An Application that allows dog owners to find local walkers in
+              their area based on time and date availability
+            </p>
+          </div>
+          <div class="card-body">
+            <a
+              href="https://secure-savannah-19572.herokuapp.com/"
+              class="card-link"
+              >Live Site</a
+            >
+            <a
+              href="https://github.com/dannyramirezgd/wag-dog-walker-app"
+              class="card-link"
+              >GitHub Page</a
+            >
+          </div>
         </div>
+        <div class="card position-static" style="width: 18rem">
+          <img
+            src="./assets/images/employeeTrackerCapture.PNG"
+            class="card-img-top"
+            alt="screen cap of employee tracking software"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">
+              Employee Tracking Database Software
+            </h5>
+            <p class="card-text">
+              A node.js and MySQL backend application that allows a user to
+              create and track employees by salary, department, and manager
+            </p>
+          </div>
+          <div class="card-body">
+            <a
+              href="https://github.com/dannyramirezgd/cms-employee-tracker"
+              class="card-link"
+              >GitHub Page</a
+            >
+          </div>
+        </div>
+        <div class="card position-static" style="width: 18rem">
+          <img
+            src="./assets/images/weatherDashboardApp.png"
+            class="card-img-top"
+            alt="screen cap of weather dashboard website"
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-bolder">Weather Dashboard App</h5>
+            <p class="card-text">
+              An application that allows a user to search by city and state to
+              find the current and future weather forecast
+            </p>
+          </div>
+          <div class="card-body">
+            <a
+              href="https://dannyramirezgd.github.io/weather-dashboard-app/"
+              class="card-link"
+              >Live Site</a
+            >
+            <a
+              href="https://github.com/dannyramirezgd/weather-dashboard-app"
+              class="card-link"
+              >GitHub Page</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Skills-->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/jsIcon.png"
+            alt="javascript icon"
+          />
+          <p>Javascript</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/bootstrapIcon.png"
+            alt="bootstrap icon"
+          />
+          <p>Bootstrap</p>
+        </li>
+        <li>
+          <img class="imgs" src="./assets/images/cssIcon.png" alt="css icon" />
+          <p>CSS</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/mysqlIcon.png"
+            alt="MySQL icon"
+          />
+          <p>MySQL</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/nosqlIcon.png"
+            alt="noSQL icon"
+          />
+          <p>noSQL</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/nodejsIcon.png"
+            alt="Node.JS icon"
+          />
+          <p>Node.js</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/mongodbIcon.png"
+            alt="mongodb icon"
+          />
+          <p>MongoDB</p>
+        </li>
+        <li>
+          <img
+            class="imgs"
+            src="./assets/images/restapiIcon.png"
+            alt="RestAPIs icon"
+          />
+          <p>Rest APIs</p>
+        </li>
       </ul>
     </section>
     <!--Contact Me-->
-    <section>
+    <section id="contact-me">
+      <h2>Contact Me</h2>
       <div class="contact-form">
-        <h3 id="contact-me">Contact Me</h3>
-        <a href="mailto:danny.ramirezgd@gmail.com">Email</a>
-        <a href="https://www.facebook.com/danny.ramirez">Facebook</a>
-        <a href="https://www.instagram.com/dannyrgd/">Instagram</a>
+        <a href="mailto:danny.ramirezgd@gmail.com">
+          <img
+            class="imgs"
+            src="./assets/images/gmailIcon.png"
+            alt="gmail icon"
+          />
+        </a>
+        <a href="https://github.com/dannyramirezgd"
+          ><img
+            class="imgs"
+            src="./assets/images/githubIcon.png"
+            alt="github icon"
+        /></a>
+        <a href="www.linkedin.com/in/dannyramirezgd"
+          ><img
+            class="imgs"
+            src="./assets/images/linkedInIcon.png"
+            alt="linkedIn icon"
+        /></a>
       </div>
     </section>
-    <footer>&copy Danny Ramirez 2021</footer>
+    <footer>&copy Danny Ramirez 2022</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
