@@ -16,4 +16,4 @@ https://dannyramirezgd.github.io/portfolio/
 
 ## Screenshot
 
-![screenshot](https://github.com/dannyramirezgd/portfolio/blob/main/assets/images/screencapture.png 'Screenshot of site')
+![screenshot](./assets/images/screencapture.png 'Screenshot of site')
